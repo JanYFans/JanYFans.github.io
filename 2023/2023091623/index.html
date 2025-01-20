@@ -1,0 +1,952 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="JYF">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="自己整理下部分常用的Markdown语法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MarkDown语法">
+<meta property="og:url" content="https://janyfans.cn/2023/2023091623/index.html">
+<meta property="og:site_name" content="JanYFans">
+<meta property="og:description" content="自己整理下部分常用的Markdown语法">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img.xintp.com/2019/12/10/b5ldi5csmry.jpg">
+<meta property="article:published_time" content="2023-09-16T15:50:37.000Z">
+<meta property="article:modified_time" content="2023-12-23T02:34:38.098Z">
+<meta property="article:author" content="JYF">
+<meta property="article:tag" content="Markdown">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://img.xintp.com/2019/12/10/b5ldi5csmry.jpg">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>MarkDown语法 - JanYFans</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"janyfans.cn","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/bean_loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":"ede1454c40d22936e449e5f4c30e2609","google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+    <!-- Baidu Analytics -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?ede1454c40d22936e449e5f4c30e2609";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+      }
+    </script>
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>JanYFans</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/book/" target="_self">
+                <i class="iconfont icon-book"></i>
+                <span>资料</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="MarkDown语法"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-09-16 23:50" pubdate>
+          2023年9月16日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          9 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">MarkDown语法</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>详细可见<a target="_blank" rel="noopener" href="https://markdown.com.cn/basic-syntax/">官方文档</a>。<br>
+主要是整理下在使用 <code>MarkDown</code>时的部分常用语法。</p>
+<h1>基本语法</h1>
+<h2 id="标题">标题</h2>
+<p>好像最多是六级标题，不过平常一般也达不到这么多。。。</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs md"><span class="hljs-section"># H1 一级标题</span><br><span class="hljs-section">## H2 二级标题</span><br>  ...<br><span class="hljs-section">###### H6 六级标题</span><br></code></pre></td></tr></table></figure>
+<h2 id="换行">换行</h2>
+<p>只需要在一个段落后加两个空格即可。</p>
+<h3 id="示例">示例</h3>
+<p>例如<br>
+这样</p>
+<p>实际代码：</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs md">例如  <br>这样<br></code></pre></td></tr></table></figure>
+<h2 id="粗体">粗体</h2>
+<p>使用很简单，只需要将需要加粗的文本放到 <code>**Text**</code> Text的位置就行。</p>
+<h3 id="示例-2">示例</h3>
+<p>显示出来是<strong>这样</strong>的</p>
+<p>实际代码：</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs md">显示出来是<span class="hljs-strong">**这样**</span>的<br></code></pre></td></tr></table></figure>
+<h2 id="引用块">引用块</h2>
+<p><s>引用块主要是为了好看吧</s></p>
+<p>使用引用块只需要在句子前面加上 <code>&gt;</code>就行了。</p>
+<h3 id="示例-3">示例</h3>
+<blockquote>
+<p>For all, only love is the best teacher, it is far better than the responsibility.</p>
+<p align="right">——Albert Einstein</p>
+</blockquote>
+<p>实际代码：</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs md"><span class="hljs-quote">&gt; For all, only love is the best teacher, it is far better than the responsibility.  </span><br><span class="hljs-quote">&gt; <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">align</span>=<span class="hljs-string">&quot;right&quot;</span>&gt;</span></span>——Albert Einstein<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span></span><br></code></pre></td></tr></table></figure>
+<p>因为 <code>MarkDown</code>中内嵌了 <code>HTML</code>，因此可以在 <code>MarkDown</code>中很方便地使用 <code>HTML</code>语法来实现一些 <code>MarkDown</code>无法实现的功能。</p>
+<h2 id="有序列表">有序列表</h2>
+<p>实际上跟平常用差不多，就是前面加上 <code>1. </code>，<code>2. </code>等等就行。</p>
+<h3 id="示例-4">示例</h3>
+<ol>
+<li>第一，要摆烂</li>
+<li>第二，要睡觉</li>
+<li>第三，要躺平</li>
+</ol>
+<p>实际代码：</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs md"><span class="hljs-bullet">1.</span> 第一，要摆烂<br><span class="hljs-bullet">2.</span> 第二，要睡觉<br><span class="hljs-bullet">3.</span> 第三，要躺平<br></code></pre></td></tr></table></figure>
+<h2 id="无序列表">无序列表</h2>
+<p>在列表前面加上 <code>- </code>就行了。</p>
+<h3 id="示例-5">示例</h3>
+<ul>
+<li>First</li>
+<li>Second</li>
+<li>Third</li>
+</ul>
+<p>实际代码：</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs md"><span class="hljs-bullet">-</span> First<br><span class="hljs-bullet">-</span> Second<br><span class="hljs-bullet">-</span> Third<br></code></pre></td></tr></table></figure>
+<h2 id="代码及代码块">代码及代码块</h2>
+<p>平时我们可以用这个语法来 <code>强调或美化</code>一些单词或者代码，使其的可阅读性<s>以及可复制性</s>提高。</p>
+<p>同时也可以使得代码高亮，方便阅读，以下是相应的支持代码高亮常用的语言：</p>
+<table>
+<thead>
+<tr>
+<th>语言名</th>
+<th>关键字</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bash</td>
+<td>bash</td>
+</tr>
+<tr>
+<td>C++</td>
+<td>cpp</td>
+</tr>
+<tr>
+<td>C#</td>
+<td>cs</td>
+</tr>
+<tr>
+<td>Css</td>
+<td>css</td>
+</tr>
+<tr>
+<td>Http</td>
+<td>http</td>
+</tr>
+<tr>
+<td>Java</td>
+<td>java</td>
+</tr>
+<tr>
+<td>JavaScript</td>
+<td>javascript</td>
+</tr>
+<tr>
+<td>JSON</td>
+<td>json</td>
+</tr>
+<tr>
+<td>Markdown</td>
+<td>markdown</td>
+</tr>
+<tr>
+<td>python</td>
+<td>python</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>sql</td>
+</tr>
+<tr>
+<td>XML</td>
+<td>xml</td>
+</tr>
+</tbody>
+</table>
+<h3 id="代码示例">代码示例</h3>
+<p><code>Hello World</code>是每个程序员的必经之路。</p>
+<p>实际代码：</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs md"><span class="hljs-code">`Hello World`</span>是每个程序员的必经之路。<br></code></pre></td></tr></table></figure>
+<h3 id="代码块示例">代码块示例</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python">a = [<span class="hljs-number">3</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>]<br>b = a<br>b[<span class="hljs-number">0</span>] = <span class="hljs-number">1</span><br><span class="hljs-built_in">print</span>(a)<br></code></pre></td></tr></table></figure>
+<p>实际代码：</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs md"><span class="hljs-code">```python</span><br><span class="hljs-code">a = [3, 1, 1]</span><br><span class="hljs-code">b = a</span><br><span class="hljs-code">b[0] = 1</span><br><span class="hljs-code">print(a)</span><br><span class="hljs-code">```</span><br></code></pre></td></tr></table></figure>
+<h2 id="分割线">分割线</h2>
+<p>只需要在代码中加入 <code>---</code>即可。</p>
+<h3 id="示例-6">示例</h3>
+<hr>
+<p>实际代码：</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs md">---<br></code></pre></td></tr></table></figure>
+<h2 id="链接">链接</h2>
+<p>这个其实挺常用，在引用啥的或者参考啥的都可以直接加个链接方便跳转。</p>
+<h3 id="示例-7">示例</h3>
+<p>跳转到<a target="_blank" rel="noopener" href="https://www.baidu.com">百度</a>。</p>
+<p>跳转到<a target="_blank" rel="noopener" href="https://www.bilibili.com">哔哩哔哩</a>。</p>
+<p>跳转到<a target="_blank" rel="noopener" href="https://www.yuanshen.com">原神启动</a>！！！</p>
+<p>实际代码：</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs md">跳转到[<span class="hljs-string">百度</span>](<span class="hljs-link">https://www.baidu.com</span>)。<br><br>跳转到[<span class="hljs-string">哔哩哔哩</span>](<span class="hljs-link">https://www.bilibili.com</span>)。<br><br>跳转到[<span class="hljs-string">原神启动</span>](<span class="hljs-link">https://www.yuanshen.com</span>)！！！<br></code></pre></td></tr></table></figure>
+<h2 id="图片">图片</h2>
+<p>在想要引入图片的时候可以用。</p>
+<h3 id="示例-8">示例</h3>
+<p><img src="https://img.xintp.com/2019/12/10/b5ldi5csmry.jpg" srcset="/img/bean_loading.gif" lazyload alt="一张图片"></p>
+<p>实际代码：</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs md">![<span class="hljs-string">一张图片</span>](<span class="hljs-link">https://img.xintp.com/2019/12/10/b5ldi5csmry.jpg</span>)<br></code></pre></td></tr></table></figure>
+<h1>扩展语法</h1>
+<p>以下虽然说是扩展语法，但其实也挺常用的。</p>
+<h2 id="表格">表格</h2>
+<p>表示一些东西的时候会比较方便。</p>
+<h3 id="示例-9">示例</h3>
+<table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Header</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Paragraph</td>
+<td>Text</td>
+</tr>
+</tbody>
+</table>
+<p>实际代码：</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs md">| Syntax      | Description |<br>| ----------- | ----------- |<br>| Header      | Title       |<br>| Paragraph   | Text        |<br></code></pre></td></tr></table></figure>
+<h2 id="脚注">脚注</h2>
+<p>一般应该是引用文献的时候用得到，倒也挺方便，不用跑到文章末尾加上这些。。</p>
+<p>Here’s a sentence with a footnote.<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="This is the footnote.">[1]</span></a></sup></p>
+<h2 id="标题编号">标题编号</h2>
+<p>主要是给特定标题打上 <code>id</code>值，以便 <code>CSS</code>的操作，估计不常用。</p>
+<h3 id="示例-10">示例</h3>
+<p>就直接贴代码吧，不搞实例了：</p>
+<figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs clean">### My Great Heading &#123;#custon-id&#125;<br></code></pre></td></tr></table></figure>
+<h2 id="定义列表">定义列表</h2>
+<p>挺奇怪的。。。</p>
+<h3 id="示例-11">示例</h3>
+<p>First Term<br>
+: This is the definition of the first term.</p>
+<p>Second Term<br>
+: This is one definition of the second term.<br>
+: This is another definition of the second term.</p>
+<p>实际代码：</p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs livecodeserver">First Term<br>: This is <span class="hljs-keyword">the</span> definition <span class="hljs-keyword">of</span> <span class="hljs-keyword">the</span> <span class="hljs-keyword">first</span> term.<br><br>Second Term<br>: This is <span class="hljs-literal">one</span> definition <span class="hljs-keyword">of</span> <span class="hljs-keyword">the</span> <span class="hljs-keyword">second</span> term.<br>: This is another definition <span class="hljs-keyword">of</span> <span class="hljs-keyword">the</span> <span class="hljs-keyword">second</span> term.<br></code></pre></td></tr></table></figure>
+<h2 id="删除线">删除线</h2>
+<p>这个到挺使用方便的，就是不知道为什么不归到基础语法里去。</p>
+<h3 id="示例-12">示例</h3>
+<p>全体目光向我看齐，快看快看，我宣布个事：我是个<s>大聪明</s>。</p>
+<p>实际代码：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs">全体目光向我看齐，快看快看，我宣布个事：我是个~~大聪明~~。<br></code></pre></td></tr></table></figure>
+<h2 id="任务列表">任务列表</h2>
+<p>这玩意看似很没什么用，实际确实没什么用（（（</p>
+<h3 id="示例-13">示例</h3>
+<ul>
+<li>[X] 睡觉</li>
+<li>[ ] 写代码</li>
+<li>[ ] 做作业</li>
+</ul>
+<p>实际代码：</p>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs asciidoc"><span class="hljs-bullet">- </span>[x] 睡觉<br><span class="hljs-bullet">- </span>[ ] 写代码<br><span class="hljs-bullet">- </span>[ ] 做作业<br></code></pre></td></tr></table></figure>
+<h1>结语</h1>
+<p>终于写完了，应该算是正式的第一篇文章了，之后可能会更新一些关于pytorch之类的文章。感觉还是人工智能方面的挺适合我的，嘿嘿。</p>
+<p>之后写的文章应该没这么水了，过几天给新生备备课，顺便练练LaTeX语法。</p>
+<section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span>This is the footnote.
+<a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Markdown/" class="category-chain-item">Markdown</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Markdown/" class="print-no-link">#Markdown</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>MarkDown语法</div>
+      <div>https://janyfans.cn/2023/2023091623/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>JYF</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年9月16日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/2023092417/" title="高精度运算模板">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">高精度运算模板</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="gitalk-container"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#gitalk-container', function() {
+      Fluid.utils.createCssLink('/css/gitalk.css')
+      Fluid.utils.createScript('https://lib.baomitu.com/gitalk/1.8.0/gitalk.min.js', function() {
+        var options = Object.assign(
+          {"clientID":"288c050c22d7a3f9a11b","clientSecret":"23397958103ab32c1d22eec7415a121d9fa5fa7d","repo":"Comment_for_Blog","owner":"JanYfans","admin":["JanYfans"],"language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"last","distractionFreeMode":false,"createIssueManually":true,"proxy":"https://netnr-proxy.cloudno.de/https://github.com/login/oauth/access_token"},
+          {
+            id: 'df4ee3ac23e48314abc986064e2ea5b2'
+          }
+        )
+        var gitalk = new Gitalk(options);
+        gitalk.render('gitalk-container');
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
